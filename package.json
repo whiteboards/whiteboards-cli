@@ -11,6 +11,9 @@
     "@oclif/command": "^1.5.12",
     "@oclif/config": "^1.12.12",
     "@oclif/plugin-help": "^2.1.6",
+    "@types/command-exists": "^1.2.0",
+    "command-exists": "^1.2.8",
+    "inquirer": "^6.2.2",
     "tslib": "^1.9.3"
   },
   "devDependencies": {
@@ -18,9 +21,12 @@
     "@oclif/test": "^1.2.4",
     "@oclif/tslint": "^3.1.1",
     "@types/chai": "^4.1.7",
+    "@types/execa": "^0.9.0",
+    "@types/inquirer": "^6.0.0",
     "@types/mocha": "^5.2.6",
     "@types/node": "^10.14.4",
     "chai": "^4.2.0",
+    "execa": "^1.0.0",
     "globby": "^8.0.2",
     "mocha": "^5.2.0",
     "nyc": "^13.3.0",

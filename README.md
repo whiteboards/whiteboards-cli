@@ -28,28 +28,25 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`wbds hello [FILE]`](#wbds-hello-file)
+* [`wbds git-user`](#wbds-git-user)
 * [`wbds help [COMMAND]`](#wbds-help-command)
 
-## `wbds hello [FILE]`
+## `wbds git-user`
 
-describe the command here
+set git user config
 
 ```
 USAGE
-  $ wbds hello [FILE]
+  $ wbds git-user
 
 OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
-
-EXAMPLE
-  $ wbds hello
-  hello world from ./src/hello.ts!
+  -e, --email=email
+  -g, --global
+  -h, --help         show CLI help
+  -n, --name=name
 ```
 
-_See code: [src/commands/hello.ts](https://github.com/whiteboards/whiteboards-cli/blob/v0.1.0/src/commands/hello.ts)_
+_See code: [src/commands/git-user.ts](https://github.com/whiteboards/whiteboards-cli/blob/v0.1.0/src/commands/git-user.ts)_
 
 ## `wbds help [COMMAND]`
 
