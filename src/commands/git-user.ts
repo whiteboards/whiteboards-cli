@@ -1,4 +1,4 @@
-import {Command, flags} from '@oclif/command'
+import {Command, flags } from '@oclif/command'
 import * as commandExists from 'command-exists'
 import * as execa from 'execa'
 import * as inquirer from 'inquirer'
@@ -28,10 +28,20 @@ export default class GitUser extends Command {
     }
 
     if (!flags.global) {
-      const isInGitRepo = !!(await execa('git', [
-        'rev-parse',
-        '--is-inside-work-tree'
-      ])).stdout
+      let isInGitRepo: boolean
+
+      try {
+        isInGitRepo = !!(await execa('git', [
+          'rev-parse',
+          '--is-inside-work-tree'
+        ])).stdout
+      } catch (err) {
+        if (err.stderr.startsWith('fatal: not a git repository')) {
+          isInGitRepo = false
+        } else {
+          return this.error('Unknown error while detecting git repository')
+        }
+      }
 
       if (!isInGitRepo) {
         return this.error('Not in a git repository')
