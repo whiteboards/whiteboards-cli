@@ -89,7 +89,7 @@ export default class GitUser extends Command {
     ])
 
     this.log(
-      `\nSuccessfully set your ${flags.global ? 'global ' : ''}git config!`
+      `\nSuccessfully set your ${flags.global ? 'global' : 'local'} git config!`
     )
   }
 }
