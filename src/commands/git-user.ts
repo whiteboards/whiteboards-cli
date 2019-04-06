@@ -1,4 +1,4 @@
-import {Command, flags } from '@oclif/command'
+import {Command, flags} from '@oclif/command'
 import * as commandExists from 'command-exists'
 import * as execa from 'execa'
 import * as inquirer from 'inquirer'
