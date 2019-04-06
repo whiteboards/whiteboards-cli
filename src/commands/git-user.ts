@@ -19,10 +19,12 @@ export default class GitUser extends Command {
   async run() {
     const {flags} = this.parse(GitUser)
 
+    let {name, email} = flags
+
     const hasGit = commandExists.sync('git')
 
     if (!hasGit) {
-      throw new Error('command git not found')
+      return this.error("Command 'git' not found")
     }
 
     if (!flags.global) {
@@ -32,13 +34,13 @@ export default class GitUser extends Command {
       ])).stdout
 
       if (!isInGitRepo) {
-        throw new Error('not in a git repository')
+        return this.error('Not in a git repository')
       }
     }
 
     const questions: inquirer.Question[] = []
 
-    if (!flags.name) {
+    if (!name) {
       questions.push({
         name: 'name',
         message: 'Name',
@@ -47,7 +49,7 @@ export default class GitUser extends Command {
       })
     }
 
-    if (!flags.email) {
+    if (!email) {
       const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
       questions.push({
         name: 'email',
@@ -61,29 +63,33 @@ export default class GitUser extends Command {
       const answers = await inquirer.prompt(questions)
 
       if (answers.name) {
-        flags.email = answers.name
+        name = answers.name
       }
 
       if (answers.email) {
-        flags.email = answers.email
+        email = answers.email
       }
     }
 
-    if (!flags.name || !flags.email) {
-      throw new Error('Somehow we still missed your name')
+    if (!name || !email) {
+      return this.error('Somehow we still missed your name')
     }
 
     execa('git', [
       'config',
       ...(flags.global ? ['--global'] : []),
       'user.name',
-      flags.name
+      name
     ])
     execa('git', [
       'config',
       ...(flags.global ? ['--global'] : []),
       'user.email',
-      flags.email
+      email
     ])
+
+    this.log(
+      `\nSuccessfully set your ${flags.global ? 'global ' : ''}git config!`
+    )
   }
 }
