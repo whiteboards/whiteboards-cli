@@ -8,14 +8,16 @@ Whiteboards CLI Utility
 [![License](https://img.shields.io/npm/l/whiteboards-cli.svg)](https://github.com/whiteboards/whiteboards-cli/blob/master/package.json)
 
 <!-- toc -->
-* [whiteboards-cli](#whiteboards-cli)
-* [Usage](#usage)
-* [Commands](#commands)
-<!-- tocstop -->
+
+- [whiteboards-cli](#whiteboards-cli)
+- [Usage](#usage)
+- [Commands](#commands)
+  <!-- tocstop -->
 
 # Usage
 
 <!-- usage -->
+
 ```sh-session
 $ npm install -g whiteboards-cli
 $ wbds COMMAND
@@ -27,21 +29,23 @@ USAGE
   $ wbds COMMAND
 ...
 ```
+
 <!-- usagestop -->
 
 # Commands
 
 <!-- commands -->
-* [`wbds gituser`](#wbds-gituser)
-* [`wbds help [COMMAND]`](#wbds-help-command)
 
-## `wbds gituser`
+- [`wbds git-user`](#wbds-git-user)
+- [`wbds help [COMMAND]`](#wbds-help-command)
+
+## `wbds git-user`
 
 set git user config
 
 ```
 USAGE
-  $ wbds gituser
+  $ wbds git-user
 
 OPTIONS
   -e, --email=email
@@ -50,7 +54,7 @@ OPTIONS
   -n, --name=name
 ```
 
-_See code: [src/commands/gituser.ts](https://github.com/whiteboards/whiteboards-cli/blob/v0.2.0/src/commands/gituser.ts)_
+_See code: [src/commands/git-user.ts](https://github.com/whiteboards/whiteboards-cli/blob/v0.2.0/src/commands/git-user.ts)_
 
 ## `wbds help [COMMAND]`
 
@@ -68,4 +72,5 @@ OPTIONS
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.1.6/src/commands/help.ts)_
+
 <!-- commandsstop -->
