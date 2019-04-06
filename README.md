@@ -21,7 +21,7 @@ $ npm install -g whiteboards-cli
 $ wbds COMMAND
 running command...
 $ wbds (-v|--version|version)
-whiteboards-cli/0.3.1 linux-x64 node-v10.15.1
+whiteboards-cli/0.4.0 linux-x64 node-v10.15.1
 $ wbds --help [COMMAND]
 USAGE
   $ wbds COMMAND
@@ -50,7 +50,7 @@ OPTIONS
   -n, --name=name
 ```
 
-_See code: [src/commands/git-user.ts](https://github.com/whiteboards/whiteboards-cli/blob/v0.3.1/src/commands/git-user.ts)_
+_See code: [src/commands/git-user.ts](https://github.com/whiteboards/whiteboards-cli/blob/v0.4.0/src/commands/git-user.ts)_
 
 ## `wbds help [COMMAND]`
 
