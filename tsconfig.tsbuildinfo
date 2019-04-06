@@ -649,7 +649,7 @@
         "version": "a4d15584836465baa0b48a0d45b66e373f0698522acbc684f4debbca58862b05",
         "signature": "a4d15584836465baa0b48a0d45b66e373f0698522acbc684f4debbca58862b05"
       },
-      "/home/keawade/Projects/whiteboards/whiteboards-cli/src/commands/git-user.ts": {
+      "/home/keawade/Projects/whiteboards/whiteboards-cli/src/commands/gituser.ts": {
         "version": "b4d506822acf003e5f87a4e6743459340418e5981cd4791574674a8267aef020",
         "signature": "51fe1989307f019619aafdc66d7d69f764401040eb347629040260a12ac43640"
       },
@@ -1703,7 +1703,7 @@
         "/home/keawade/Projects/whiteboards/whiteboards-cli/node_modules/@types/node/util.d.ts",
         "/home/keawade/Projects/whiteboards/whiteboards-cli/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "/home/keawade/Projects/whiteboards/whiteboards-cli/src/commands/git-user.ts": [
+      "/home/keawade/Projects/whiteboards/whiteboards-cli/src/commands/gituser.ts": [
         "/home/keawade/Projects/whiteboards/whiteboards-cli/node_modules/@oclif/command/lib/index.d.ts",
         "/home/keawade/Projects/whiteboards/whiteboards-cli/node_modules/@types/command-exists/index.d.ts",
         "/home/keawade/Projects/whiteboards/whiteboards-cli/node_modules/@types/execa/index.d.ts",
@@ -2907,7 +2907,7 @@
         "/home/keawade/Projects/whiteboards/whiteboards-cli/node_modules/@types/node/util.d.ts",
         "/home/keawade/Projects/whiteboards/whiteboards-cli/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "/home/keawade/Projects/whiteboards/whiteboards-cli/src/commands/git-user.ts": [
+      "/home/keawade/Projects/whiteboards/whiteboards-cli/src/commands/gituser.ts": [
         "/home/keawade/Projects/whiteboards/whiteboards-cli/node_modules/@oclif/parser/lib/flags.d.ts",
         "/home/keawade/Projects/whiteboards/whiteboards-cli/node_modules/@oclif/command/lib/index.d.ts"
       ],
@@ -3301,7 +3301,7 @@
       "/home/keawade/Projects/whiteboards/whiteboards-cli/node_modules/rxjs/internal/config.d.ts",
       "/home/keawade/Projects/whiteboards/whiteboards-cli/node_modules/rxjs/index.d.ts",
       "/home/keawade/Projects/whiteboards/whiteboards-cli/node_modules/@types/inquirer/index.d.ts",
-      "/home/keawade/Projects/whiteboards/whiteboards-cli/src/commands/git-user.ts",
+      "/home/keawade/Projects/whiteboards/whiteboards-cli/src/commands/gituser.ts",
       "/home/keawade/Projects/whiteboards/whiteboards-cli/node_modules/@types/chai/index.d.ts",
       "/home/keawade/Projects/whiteboards/whiteboards-cli/node_modules/@types/lodash/common/common.d.ts",
       "/home/keawade/Projects/whiteboards/whiteboards-cli/node_modules/@types/lodash/common/array.d.ts",
