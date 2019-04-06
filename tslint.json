@@ -1,9 +1,7 @@
 {
   "extends": "@keawade/tslint-config",
   "rules": {
-    "completed-docs": false,
     "cyclomatic-complexity": false,
-    "export-name": false,
     "no-default-export": false,
     "no-shadowed-variable": false
   }
